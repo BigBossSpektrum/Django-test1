@@ -1,13 +1,12 @@
-
 from django.contrib import admin
 from django.urls import path
-from polls import views
+from polls.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', index, name='index'),
 ]
 
